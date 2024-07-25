@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project1</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5f706d202e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Remix Icon-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Wrapper-->
+    <div class="wrapper">
+      <!--Search, filter and butttons-->
+      <div class="top-container">
+        <div class="top-container-header">
+          <div class="top-container-1">
+            <div class="drop-menu-container">
+              <label for="drop-menu" class="dropmenu-label">Sort by: </label>
+              <select name="dropmenu" id="drop-menu" class="drop-menu">
+                <option value="all">All</option>
+                <option value="most liked">Most Liked</option>
+                <option value="most disliked">Most Disliked</option>
+                <option value="most recent citation">
+                  Most Recent Citation
+                </option>
+                <option value="oldest citation">Oldest Citation</option>
+              </select>
+            </div>
+            <div class="search-container">
+              <input
+                type="text"
+                name="search"
+                class="search-input"
+                placeholder="Search"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <!--Form to add citation-->
+          <nav class="top-container-2">
+            <ul class="container2-ul">
+              <li class="li">
+                <a class="add-citation-Btn">Add a Citation</a>
+                <span class="tooltip">Click to add</span>
+              </li>
+              <li><a href="" class="connection-Btn">Connection</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--middle container-->
+        <div class="middle-container">
+          <form>
+            <textarea placeholder="Citation" class="textarea"></textarea>
+            <input type="text" class="form-author-input" placeholder="Author" />
+            <input type="text" class="form-year-input" placeholder="Year" />
+            <button type="submit" class="form-Btn">Add Citation</button>
+          </form>
+        </div>
+      </div>
+
+      <!--To be done with js, citations-->
+      <div class="citations-container">
+        <ul class="citations-list"></ul>
+      </div>
+    </div>
+  </body>
+</html>
