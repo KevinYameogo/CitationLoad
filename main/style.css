@@ -8,8 +8,6 @@ html {
 }
 body {
   font-family: "Slabo 27px", serif;
-
-  /* border: 1px solid deepskyblue; */
 }
 ul {
   list-style: none;
@@ -18,7 +16,6 @@ a {
   text-decoration: none;
 }
 .wrapper {
-  /* border: 1px solid violet; */
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -31,7 +28,6 @@ a {
   font-family: "Slabo 27px", serif;
 }
 .top-container {
-  /* border: 1px solid red; */
   width: 100%;
   height: 100%;
   display: flex;
@@ -46,12 +42,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid seagreen; */
   width: 100%;
   height: 100%;
-  /* column-gap: 500px; */
   column-gap: 40px;
-  /* padding: 5px; */
 }
 .top-container-1 {
   /* border: 1px solid wheat; */
@@ -65,17 +58,12 @@ a {
   /* width: 100%; */
 }
 .drop-menu-container {
-  /* border: 1px solid palegreen; */
   border: 2px solid #000;
   padding: 5px;
   border-radius: 6px;
-  /* font-size: 2rem; */
-  /* width: 100%; */
 }
 .dropmenu-label {
   font-size: 1.8rem;
-  /* border: 1px solid red; */
-  /* padding: 3px 5px; */
 }
 .drop-menu {
   border: none;
@@ -85,7 +73,6 @@ a {
   padding: 3px 5px;
   width: max-content;
   transition: all 0.3s ease;
-  /* border: 1px solid #000; */
 }
 
 .drop-menu:focus {
@@ -94,7 +81,6 @@ a {
   border-radius: 3px;
 }
 .search-container {
-  /* border: 1px solid plum; */
   padding: 5px;
   flex: 1;
 }
@@ -110,7 +96,6 @@ a {
   color: #262931;
 }
 .top-container-2 {
-  /* border: 1px solid royalblue; */
   margin-right: 10px;
 }
 .container2-ul {
@@ -153,10 +138,6 @@ a {
 
   border-color: transparent transparent #262931 transparent;
 }
-/* .li:hover .tooltip {
-  display: block;
-  opacity: 1;
-} */
 .li:active a {
   color: hsl(from #262931 h s l / 0.1);
 }
@@ -189,7 +170,6 @@ a {
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
-  /* border: 1px solid rebeccapurple; */
 }
 .form-author-input,
 .form-year-input {
@@ -226,7 +206,6 @@ a {
   border: 2px solid #000;
 }
 .citations-container {
-  /* border: 1px solid orange; */
   width: 100%;
   height: 100%;
   padding: 20px;
@@ -275,7 +254,6 @@ a {
   row-gap: 20px;
 }
 .citation-container {
-  /* border: 1px solid purple; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -289,7 +267,6 @@ a {
 }
 
 .citation-inner1 {
-  /* border: 1px solid violet; */
   font-size: 1.8rem;
   padding: 10px;
   row-gap: 10px;
@@ -307,11 +284,9 @@ a {
   align-items: center;
   font-size: 1.8rem;
   column-gap: 10px;
-  /* padding: 10px; */
 }
 .tup-cont,
 .bot-cont {
-  /* border: 1px solid #000; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -391,17 +366,14 @@ a {
 @media screen and (max-width: 1025px) {
   .dropmenu-label {
     font-size: 1.6rem;
-    /* border: 1px solid red; */
   }
   .drop-menu {
     border: none;
     outline: none;
     font-size: 1.6rem;
     color: #3684ad;
-    /* padding: 0px; */
     width: max-content;
     transition: all 0.3s ease;
-    /* border: 1px solid #000; */
   }
 
   .search-input {
@@ -416,12 +388,9 @@ a {
     color: #262931;
   }
   .drop-menu-container {
-    /* border: 1px solid palegreen; */
     border: 2px solid #000;
     padding: 5px;
     border-radius: 6px;
-    /* font-size: 2rem; */
-    /* width: 100%; */
   }
   .drop-menu:focus {
     color: #000;
@@ -434,7 +403,6 @@ a {
     gap: 40px;
     font-size: 1.6rem;
     padding: 10px;
-    /* border: 1px solid red; */
   }
   .form-author-input,
   .form-year-input {
@@ -481,14 +449,11 @@ a {
     font-size: 1.3rem;
   }
   .citation-inner2 {
-    /* border: 1px solid yellow !important; */
-
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
     column-gap: 10px;
-    /* padding: 10px; */
   }
 }
 
@@ -497,8 +462,6 @@ a {
     white-space: nowrap;
   }
   .drop-menu-container {
-    /* border: 1px solid palegreen; */
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -511,17 +474,13 @@ a {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    /* font-size: 1.6rem; */
     padding: 5px;
-    /* border: 1px solid red; */
   }
   .li {
-    /* border: 1px solid blue !important; */
     white-space: nowrap;
   }
   /*to delete*/
   .top-container {
-    /* border: 1px solid red; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -559,10 +518,8 @@ a {
 
   .top-container-header {
     display: flex;
-    /* justify-content: space-between; */
     justify-content: center;
     align-items: flex-start;
-    /* border: 1px solid seagreen; */
     width: 100%;
     height: 100%;
     flex-direction: column;
@@ -570,7 +527,6 @@ a {
     row-gap: 20px;
   }
   .top-container-1 {
-    /* border: 1px solid wheat; */
     display: flex;
     margin-bottom: 5px;
     margin-left: 0px;
@@ -578,17 +534,14 @@ a {
     order: 2;
   }
   .top-container-2 {
-    /* border: 1px solid royalblue; */
     margin-right: 0px;
     order: 1;
     align-self: center;
-
     margin-top: 5px;
   }
 }
 @media screen and (max-width: 800px) {
   .citations-list {
-    /* border: 1px solid darkcyan; */
     max-width: 100%;
     min-width: 100%;
     margin: 0 auto;
@@ -599,21 +552,17 @@ a {
     row-gap: 20px;
   }
   .citation-container {
-    /* border: 1px solid yellow; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
     column-gap: 60px;
     padding: 5px 5px;
-    /* width: 100%; */
     margin: 0 auto;
     height: 100%;
-    /* min-width: max-content; */
     width: 100%;
     max-width: max-content;
   }
   .citation-inner1 {
-    /* border: 1px solid red; */
     font-size: 1.5rem;
     padding: 5px;
     row-gap: 3px;
@@ -623,8 +572,6 @@ a {
     align-items: flex-start;
   }
   .citation-inner2 {
-    /* border: 1px solid crimson; */
-
     font-size: 1.5rem;
     padding: 5px;
   }
@@ -644,14 +591,11 @@ a {
     width: 100%;
   }
   .top-container-1 {
-    /* border: 1px solid wheat; */
     flex-direction: column;
     row-gap: 20px;
   }
 
   .drop-menu-container {
-    /* border: 1px solid palegreen; */
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -668,9 +612,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    /* font-size: 1.6rem; */
     padding: 5px;
-    /* border: 1px solid red; */
   }
 }
 @media screen and (max-width: 520px) {
@@ -679,18 +621,14 @@ a {
     content: "Fill in all fields to add citation.";
     color: #262931;
     top: 120%;
-    /* transform: translateY(140%); */
     white-space: nowrap;
     left: 2%;
     font-size: 1.5rem;
-    /* bottom: 0; */
     padding-top: 10px;
   }
 }
 @media screen and (max-width: 495px) {
   .citation-container {
-    /* border: 1px solid yellow; */
-
     column-gap: 20px;
   }
   .inner1-p2 {
@@ -713,13 +651,9 @@ a {
     flex-direction: column;
     gap: 5px;
     padding: 5px;
-    /* border: 1px solid red; */
   }
   .drop-menu-container {
-    /* border: 1px solid palegreen; */
-
     padding: 5px;
-
     width: 100%;
     flex-direction: column;
     text-align: center;
@@ -753,7 +687,6 @@ a {
     color: #262931;
   }
   .search-container {
-    /* border: 1px solid plum; */
     padding: 5px;
     flex: 1;
     width: 100%;
@@ -761,8 +694,6 @@ a {
 }
 @media screen and (max-width: 290px) {
   .citation-container {
-    /* border: 1px solid yellow; */
-
     flex-direction: column;
     row-gap: 5px;
   }
