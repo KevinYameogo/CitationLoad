@@ -6,6 +6,8 @@ const addCitationBtn = document.querySelector(".form-Btn");
 const textareaEl = document.querySelector(".textarea");
 const authorInput = document.querySelector(".form-author-input");
 const authorYear = document.querySelector(".form-year-input");
+const searchInput = document.querySelector(".search-input");
+
 //
 const thumbsDown = document.querySelector(".ri-thumb-down-line");
 const thumbsUp = document.querySelector(".ri-thumb-up-line");
@@ -21,10 +23,12 @@ let thumbsUpCount = localStorage.getItem("thumbsUpCount") || 0;
 
 //event listeners
 addBtn.addEventListener("click", displayMiddleContainer);
+
 addCitationBtn.addEventListener("click", addCitation);
 
 document.addEventListener("DOMContentLoaded", getCitations);
 dropDownMenu.addEventListener("change", filterCitations);
+searchInput.addEventListener("keyup", Search);
 
 //functions
 function displayMiddleContainer() {
@@ -32,7 +36,17 @@ function displayMiddleContainer() {
 }
 
 function addCitation(e) {
-  e.preventDefault();
+  const citationText = textareaEl.value.trim();
+  const authorName = authorInput.value.trim();
+  const authoryear = authorYear.value.trim();
+  const btnAfter = document.querySelector(".form-Btn");
+
+  //check to see if inputs are not null
+  if (citationText === "" || authorName === "" || authoryear === "") {
+    e.preventDefault();
+    btnAfter.classList.add("add");
+    return;
+  }
 
   // Generate a unique identifier for each citation
   const citationId = `citation-${new Date().getTime()}`;
@@ -393,6 +407,43 @@ function filterCitations(e) {
         citationELement.style.display =
           oldest.id === citationId ? "flex" : "none";
         break;
+    }
+  });
+}
+
+function Search() {
+  const searchInput = document.querySelector(".search-input");
+
+  // const pText = citationsList.getElementsByTagName("p");
+  // console.log(searchInput);
+  if (!searchInput) return;
+  const searchValue = searchInput.value.toUpperCase();
+  const citationContainers = document.querySelectorAll(".citation-container");
+  citationContainers.forEach((container) => {
+    const pTags = container.querySelectorAll("p");
+    let matchFound = false;
+
+    pTags.forEach((p) => {
+      const textvalue = p.textContent.toUpperCase();
+      const index = textvalue.indexOf(searchValue);
+      if (index > -1) {
+        matchFound = true;
+        const originalText = p.textContent;
+        const beforeMatch = originalText.slice(0, index);
+        const matchText = originalText.slice(index, index + searchValue.length);
+        const afterMatch = originalText.slice(index + searchValue.length);
+
+        const highlithedText = `${beforeMatch}<span class='color'>${matchText}</span>${afterMatch}`;
+        // console.log(highlithedText);
+        p.innerHTML = highlithedText;
+      } else {
+        p.innerHTML = p.textContent;
+      }
+    });
+    if (matchFound) {
+      container.style.display = "";
+    } else {
+      container.style.display = "none";
     }
   });
 }

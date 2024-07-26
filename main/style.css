@@ -241,6 +241,24 @@ a {
   border-radius: 5px;
   transition: background-color 0.4s ease;
   font-weight: 500;
+  position: relative;
+}
+.form-Btn::after {
+  position: absolute;
+  content: "Fill in all fields to add citation.";
+  color: #ed0807;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  left: 130%;
+  font-size: 1.8rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out;
+}
+.form-Btn.add::after {
+  opacity: 1;
+  visibility: visible;
 }
 .form-Btn:hover {
   background-color: hsl(from #262931 h s l / 0.9);
@@ -587,9 +605,12 @@ a {
     align-items: center;
     column-gap: 60px;
     padding: 5px 5px;
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
     height: 100%;
+    /* min-width: max-content; */
+    width: 100%;
+    max-width: max-content;
   }
   .citation-inner1 {
     /* border: 1px solid red; */
@@ -652,7 +673,20 @@ a {
     /* border: 1px solid red; */
   }
 }
-
+@media screen and (max-width: 520px) {
+  .form-Btn::after {
+    position: absolute;
+    content: "Fill in all fields to add citation.";
+    color: #262931;
+    top: 120%;
+    /* transform: translateY(140%); */
+    white-space: nowrap;
+    left: 2%;
+    font-size: 1.5rem;
+    /* bottom: 0; */
+    padding-top: 10px;
+  }
+}
 @media screen and (max-width: 495px) {
   .citation-container {
     /* border: 1px solid yellow; */
@@ -732,4 +766,8 @@ a {
     flex-direction: column;
     row-gap: 5px;
   }
+}
+.color {
+  color: #5c78fa;
+  background-color: #cdff71;
 }
