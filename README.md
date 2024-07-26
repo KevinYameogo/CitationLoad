@@ -11,6 +11,8 @@ This project is focus on demonstrating the use of the Javascript localstorage pr
 
 ## Watch visualizer
 
+https://github.com/user-attachments/assets/89785b49-b8f8-4fcb-87b4-4d3ee8cd853b
+
 ## Awareness(Work in progress)
 
 The connection section is not fully done yet! It is coming soon!
