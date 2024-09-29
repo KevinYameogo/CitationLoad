@@ -9,7 +9,7 @@ This project is focus on demonstrating the use of the Javascript localstorage pr
 - Filter citations using drowdown-menu(numbers of likes,time added).
 - Search engine that matches user search terms to citation informations.
 
-## Watch visualizer
+## Watch visualizer[Click on text to go to page](https://kevinyameogo.github.io/CitationLoad/)
 
 https://github.com/user-attachments/assets/89785b49-b8f8-4fcb-87b4-4d3ee8cd853b
 
